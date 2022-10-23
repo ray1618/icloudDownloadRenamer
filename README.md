@@ -1,4 +1,4 @@
-# iCloud download image name prefixer
+# iCloud downloaded image name prefixer
 
 As I downloaded my icloud images to my local storage. I found out al the names make no sense. It's hard to sort them by date without some kind of photo library as all the images are named img_XXXX.jpg
 
