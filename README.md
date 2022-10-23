@@ -1,8 +1,8 @@
-# iCloud downloaded image name prefixer
+# iCloud downloaded images name prefixer
 
 As I downloaded my icloud images to my local storage. I found out al the names make no sense. It's hard to sort them by date without some kind of photo library as all the images are named img_XXXX.jpg
 
-What this script will do is put the date that the image is taken as a prefix of the original filename and in the process do the same thing to the "livephoto" .mov
+What this script will do is put the date that the image is taken as a prefix of the original filename and batch rename all images in the image folder. And in the process do the same thing to the "livephoto" .mov
 
 For example an image **img_XXXXX.jpg** & **img_img_XXXXX.mov** will be renamed to **2020-10-01-23-55-55_img_XXXX.jpg** & **2020-10-01-23-55-55_img_XXXX.mov**
 
