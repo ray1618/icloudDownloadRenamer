@@ -15,6 +15,6 @@ This script wil rename **.jpg**, **.png**, **.heic** and the corresponding **.mo
 - Put your downloaded images to the images folder in the root.
 - Install the npm dependencies `npm install`
 - Then run `npm start`
-- Done now the
+- Done!
 
 > Make a copy of your images before you run this command and check the result before deleting the originals.
