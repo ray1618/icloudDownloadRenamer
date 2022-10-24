@@ -2,10 +2,7 @@ const Fs = require('fs');
 const Path = require('path');
 const colors = require('colors');
 const fullPath = Path.join(__dirname, './images');
-const os = require('os');
 const ExifReader = require('exifreader');
-
-var ii = 0;
 
 function start() {
   // get all files in images folder

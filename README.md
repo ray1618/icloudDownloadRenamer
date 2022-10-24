@@ -12,9 +12,18 @@ This script wil rename **.jpg**, **.png**, **.heic** and the corresponding **.mo
 
 ## How to use:
 
-- Put your downloaded images to the images folder in the root.
+- Put your downloaded images to the images folder.
 - Install the npm dependencies `npm install`
-- Then run `npm start`
+- Then run `npm start` or `npm run rename`
 - Done!
 
-> Make a copy of your images before you run this command and check the result before deleting the originals.
+## Only rename mov files:
+
+- If you not done this already installthe npm dependencies `npm install`
+- For this to work you will also need to install exiftool
+- Mac OS: `$brew install exiftool`
+- Ubuntu: `apt-get install libimage-exiftool-perl`
+- Put your downloaded mov files in image folder.
+- run `npm run rename:movs`
+
+> Make a copy of your images / movs before you run this command and check the result before deleting the originals.

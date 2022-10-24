@@ -5,6 +5,8 @@
   "main": "rename.js",
   "scripts": {
     "start": "node rename.js",
+    "rename": "node rename.js",
+    "rename:movs": "node rename-movs.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "raymond bas",
@@ -12,6 +14,7 @@
   "dependencies": {
     "colors": "^1.4.0",
     "exifreader": "^4.6.0",
+    "exiftool": "^0.0.3",
     "os": "^0.1.2"
   }
 }
