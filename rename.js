@@ -1,6 +1,5 @@
 const Fs = require('fs');
 const Path = require('path');
-const colors = require('colors');
 const fullPath = Path.join(__dirname, './images');
 const ExifReader = require('exifreader');
 
@@ -126,14 +125,19 @@ function createNewName(fileImg) {
 }
 
 function getExifTags(fileImg) {
-  const filePath = Path.join(fullPath, fileImg);
+  try {
+    const filePath = Path.join(fullPath, fileImg);
 
-  const data = Fs.readFileSync(filePath);
-  const tags = ExifReader.load(data);
-  if (tags) {
-    delete tags['MakerNote'];
+    const data = Fs.readFileSync(filePath);
+    const tags = ExifReader.load(data);
+
+    if (tags) {
+      delete tags['MakerNote'];
+    }
+    return tags;
+  } catch (err) {
+    console.log('error:', err);
   }
-  return tags;
 }
 
 start();
